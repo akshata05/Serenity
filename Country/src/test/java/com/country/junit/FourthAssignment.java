@@ -37,6 +37,21 @@ public class FourthAssignment {
 		.all();
 		
 	}
-	
+	@Title("This is to validate inavlid login")
+	@Test
+	public void LoginInvalidUser() {
+		SerenityRest.given()
+		.auth()
+		.basic("postman","pass")
+		.log()
+		.all()
+		.get()
+		.then()
+		.assertThat()
+		.statusCode(200)
+		.log()
+		.all();
+		
+	}
 
 }
