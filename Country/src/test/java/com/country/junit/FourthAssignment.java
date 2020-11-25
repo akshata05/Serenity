@@ -32,12 +32,12 @@ public class FourthAssignment {
 		.get()
 		.then()
 		.assertThat()
-		.statusCode(200)
+		.statusCode(401)
 		.log()
 		.all();
 		
 	}
-	@Title("This is to validate inavlid login")
+	@Title("This is to validate inavlid login credentials")
 	@Test
 	public void LoginInvalidUser() {
 		SerenityRest.given()
