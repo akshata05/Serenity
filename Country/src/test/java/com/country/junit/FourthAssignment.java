@@ -32,7 +32,7 @@ public class FourthAssignment {
 		.get()
 		.then()
 		.assertThat()
-		.statusCode(200)
+		.statusCode(401)
 		.log()
 		.all();
 		
